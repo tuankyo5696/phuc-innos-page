@@ -1,0 +1,91 @@
+.partnerships2 {
+    background-color: #C5B39E;
+    display: flex;
+    flex-direction: column;
+    min-height: 20rem;
+    .ttaPadding {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        min-height: 18rem;
+        .animate.default.right {
+            position: relative;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            opacity: 0;
+            h2{
+                font-size: 1.3rem;
+                margin-bottom: 3rem;
+                font-weight: lighter;
+                color:white;
+            }
+            strong{
+                color:white;
+            }
+            p{
+                color: white;
+                font-size: .85rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .divPartner {
+        background-image: url(./../../../assets//images//live-experience.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 40%;
+        min-height: 200px;
+        min-width: 50vw;
+    }
+
+}
+
+.partnerships2 .ttaPadding .animate.default.right.in-view {
+    left: 0;
+    opacity: 1;
+}
+
+
+/////add class in-view when scroll down
+// .animate.default.right.in-view {
+//     left: 0;
+//     opacity: 1;
+// }
+
+@media (min-width: 767px){
+    .partnerships2 {
+        flex-direction: row-reverse;
+        flex: 1;
+        .ttaPadding {
+            flex: 1;
+            // .animate.default{
+            //     h2 {
+            //         font-size: 1.5rem;
+            //     }
+            //     p {
+            //         font-size: .95rem;
+            //      }
+            // } 
+        }
+    }
+   
+}
+
+
+@media (min-width:992px){
+    .partnerships2 {
+        .ttaPadding .animate.default.right {
+            h2 {
+                font-size: 2rem;
+              }
+            p {
+                font-size: 1rem;
+            }
+        }
+          .divPartner {
+            min-width: 50%;
+        }
+    }
+}

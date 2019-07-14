@@ -1,0 +1,87 @@
+.approach {
+    background-image: url(./../../../assets/images/our-approach.jpg);
+    background-position: 50% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #E40346;
+    text-align: center;
+    display: table;
+    .ttaPadding.animate {
+        padding: 5.5rem 2rem;
+        opacity: 0;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        div{
+            h2{
+                font-size: 1.3rem;
+                margin-bottom: 3rem;
+                font-weight: lighter;
+                color:white;
+            }
+            strong{
+                color:white;
+            }
+            p{
+                color: white;
+                font-size: .85rem;
+                margin-bottom: 1rem;
+            }
+        }
+            
+        
+    }
+
+}
+
+
+.ttaPadding.animate.in-view {
+    left: 0;
+    opacity: 1;
+}
+
+
+.approach .align-middle {
+    display: table-cell;
+}
+
+.align-middle {
+    vertical-align: middle!important;
+}
+
+
+
+@media (min-width: 767px){
+    .approach{
+        height: 536.4px;
+        .ttaPadding.animate {
+            padding: 5.5rem 8rem;
+            // div{
+            //     h2 {
+            //         font-size: 1.5rem;
+            //     }
+            //     p {
+            //         font-size: .95rem;
+            //     }
+            // }
+        }
+    }
+}
+
+@media (min-width:992px){
+    .approach{
+        height: 439.8px;
+        .ttaPadding.animate {
+            padding: 5.5rem 10rem;
+            div {
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

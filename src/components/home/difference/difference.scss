@@ -1,0 +1,137 @@
+.difference {
+    background-color: #FFFFFF;
+    display: table;
+    .ttaPadding {
+        padding: 2rem 2rem 2.5rem 2rem;
+        color: #6A666A;
+        .animate.default.left {
+            position: relative;
+            left: 0;
+            opacity: 0;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            //opacity: 0;
+            h2{
+                font-size: 1.3rem;
+                margin-bottom: 20px;
+                font-weight: lighter;
+                color:gray;
+            }
+            strong{
+               color:gray;
+            }
+            p{
+                color: gray;
+                font-size: .85rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .skyline {
+        padding: 0;
+        .in-view .layer {
+            left: 0 !important;
+            opacity: 1;
+        }
+    }
+}
+div.skyline {
+    height: 30vh;
+}
+.align-bottom {
+    vertical-align: bottom!important;
+}
+
+.difference .ttaPadding .animate.default.left.in-view {
+    left: 0;
+    opacity: 1;
+}
+//col-sm-12 col-md-6 align-bottom animate
+
+div .skyline img {
+    position:absolute;
+}
+
+#layer1{
+    z-index: 1;
+}
+#layer2{
+    z-index: 1;
+}
+#layer3{
+    z-index: 3;
+}
+#layer4{
+    z-index: 2;
+}
+#layer5{
+    z-index: 5;
+}
+#layer6{
+    z-index: 1;
+}
+#layer7{
+    z-index: 1;
+}
+#layer8{
+    z-index: 1;
+}
+
+//Layer
+.skyline.align-bottom.animate {
+    position: relative;
+    height: 30vh;
+    bottom: -1px;
+    -webkit-transition: margin-left 0.5s ease, left 2s ease, opacity 1s ease;
+    -moz-transition: margin-left 0.5s ease, left 2s ease, opacity 1s ease;
+    -ms-transition: margin-left 0.5s ease, left 2s ease, opacity 1s ease;
+    -o-transition: margin-left 0.5s ease, left 2s ease, opacity 1s ease;
+    opacity: 0;
+}
+
+.skyline.align-bottom.animate.in-view{
+    //left: 0 !important;
+    position: relative;
+    left: -200px;
+    transform: translateX(200px);
+    opacity: 1;
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
+}
+
+@media (min-width: 768px){
+    .difference{
+        div {
+            display: table-cell;
+            width: 50%;
+        }
+    } 
+    .skyline.align-bottom.animate {
+        width: 50%;
+        padding-bottom: 26%;
+    }
+    .skyline.align-bottom.animate.in-view {
+        width: 50%;
+        padding-bottom: 26%;
+    }
+}
+
+@media (min-width: 992px){
+    .difference{
+        .ttaPadding {
+            padding: 50px 75px;
+            .animate.default.left.in-view{
+                h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }    
+            } 
+        }
+    } 
+}

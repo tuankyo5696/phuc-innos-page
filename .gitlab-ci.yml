@@ -1,0 +1,25 @@
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+  - node_modules/
+
+before_script:
+  - export PATH=$PATH:/home/gitlab-runner/.nvm/versions/node/v11.11.0/bin/
+  - npm i
+  - NODE_OPTIONS=--max-old-space-size=4096
+
+stages:
+  - deployBeta
+# - basicTest
+# - deployProduction
+  
+deployN4Beta:
+  stage: deployBeta
+  only:
+    refs:
+      - master
+      - cicd
+  script:
+    - CI="" gatsby build 
+    - rsync -a -e "ssh -p 1210" ./public/ deploy@192.168.88.104:/var/www/medisquare --delete
+    
