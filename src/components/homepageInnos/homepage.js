@@ -19,29 +19,29 @@ class HomePage extends Component {
       scrolling4: false,
     }
 
-  }  
-  
+  }
+
     componentDidMount() {
       window.addEventListener('scroll', this.handleScroll)
       window.addEventListener('scroll', this.handleScroll2)
       window.addEventListener('scroll', this.handleScroll3)
-      window.addEventListener('scroll', this.handleScroll4)      
+      window.addEventListener('scroll', this.handleScroll4)
     }
 
     //About
     handleScroll = (e) => {
         window.scrollY > 300 && window.scrollY <1000 ? this.setState({ scrolling: true }) : this.setState({ scrolling: false })
-        
+
     }
 
     //News
     handleScroll2 = (e) => {
-      window.scrollY > 4000 && window.scrollY <4800 ? this.setState({ scrolling2: true }) : this.setState({ scrolling2: false })
+      window.scrollY > 2500 && window.scrollY <3800 ? this.setState({ scrolling2: true }) : this.setState({ scrolling2: false })
     }
 
     //Offices
     handleScroll3 = (e) => {
-      window.scrollY > 4800 ? this.setState({ scrolling3: true }) : this.setState({ scrolling3: false })
+      window.scrollY > 3500 ? this.setState({ scrolling3: true }) : this.setState({ scrolling3: false })
       console.log(window.scrollY);
     }
     //Clients

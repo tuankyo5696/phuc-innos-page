@@ -160,14 +160,12 @@ class Header extends React.Component {
                                         style={{ cursor: 'pointer' }}
                                     >
                                         <Link className={`${attachClasses2.join(" ")} ${toggleClass}`}
-
                                             activeClassName="active-nav-item" to="/solutions">
                                             SOLUTIONS
                                             </Link>
                                     </div>
                                     <div className="dropdown"
                                         onMouseEnter={this.onMouseEnterHandlerService}
-
                                     >
                                         <Link className={`${attachClasses2.join(" ")} ${toggleClass}`}
                                             activeClassName="active-nav-item" to="/services">

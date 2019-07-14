@@ -40,7 +40,7 @@ class Offer extends Component {
 		const dataServices = DATASERVICES
         const dataIndustries = DATAINDUSTRIES
         
-		const { toggleClass, state1,state2,state3 } = this.state
+		const { toggleClass } = this.state
 		return(
 			<section className="section-offers">
 
