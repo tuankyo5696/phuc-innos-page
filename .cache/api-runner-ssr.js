@@ -1,8 +1,8 @@
 var plugins = [{
-      plugin: require('D:/Phuc/InnosHomePage/innospage-cicd/innospage-cicd/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('D:/Phuc/InnosHomePage/innos/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('D:/Phuc/InnosHomePage/innospage-cicd/innospage-cicd/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('D:/Phuc/InnosHomePage/innos/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"GatsbyJS","short_name":"GatsbyJS","start_url":"/","background_color":"#f7f0eb","theme_color":"#a2466c","display":"standalone","icon":"src/assets/images/logo-final.svg"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
